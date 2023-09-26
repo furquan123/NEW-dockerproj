@@ -1,0 +1,17 @@
+version: '3'
+services:
+  train:
+    image: fk23/phonepaytrain:v1
+    ports:
+      - "8000:80"
+
+  movie:
+    image: fk23/phonepaymovie:v1
+    ports:
+      - "8001:80"
+
+  recharge:
+    image: fk23/phonepayrecharge:v1  
+    ports:
+      - "8002:80"    
+      
